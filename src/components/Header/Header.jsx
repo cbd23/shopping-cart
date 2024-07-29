@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import { Link } from 'react-router-dom'
 
 import Icon from '@mdi/react'
 import { mdiHomeOutline, mdiStorefrontOutline, mdiHeartOutline, mdiCartOutline, mdiInformationOutline } from '@mdi/js'
@@ -10,14 +11,8 @@ function Header() {
           This is not a real store. Click here to find out more about it.
         </p>
         <nav className={styles.navPages}>
-          <div className={styles.leftHeaderBox}>
-            <div className={styles.navAbout}>
-              <Icon className={styles.navIcon} path={mdiInformationOutline} size={1} />
-              <div className={styles.aboutText}>About</div>
-            </div>
-          </div>
-          <div className={styles.midHeaderBox}>
-            <div className={styles.navLogo}>B A D I L A</div>
+          <div className={styles.logoBox}>
+            <div className={styles.navLogo}>BADILA&apos;s</div>
           </div>
           <div className={styles.rightHeaderBox}>
             <ul className={styles.navPagesUl}>
@@ -35,9 +30,15 @@ function Header() {
               </li>
               <li>
                 <div className={styles.liIcon}>
+                <Icon className={styles.navIcon} path={mdiInformationOutline} size={1} />
+                </div>
+                <div className={styles.liText}>About</div>
+              </li>
+              <li>
+                <div className={styles.liIcon}>
                   <Icon className={styles.navIcon} path={mdiHeartOutline} size={1} />
                 </div>
-                <div className={styles.liText}>Favorites</div>
+                <div className={styles.liText}>Favs</div>
               </li>
               <li>
                 <div className={styles.liIcon}>
@@ -48,14 +49,16 @@ function Header() {
             </ul>
           </div>
         </nav>
-        <nav className={styles.navCategories}>
+        {/* <nav className={styles.navCategories}>
           <ul>
-            <li>Women&apos;s clothing</li>
+            <li>
+              <Link to='/shop/women'>Women&apos;s clothing</Link>
+            </li>
             <li>Men&apos;s clothing</li>
             <li>Electronics</li>
             <li>Jewelery</li>
           </ul>
-        </nav>
+        </nav> */}
       </header>
     )
 }
