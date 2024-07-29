@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
+
 
 // eslint-disable-next-line no-unused-vars
 import styles from "./App.module.css";
@@ -9,6 +11,7 @@ function App() {
   return (
     <>
       <Header></Header>
+      <Outlet />
     </>
   );
 }
