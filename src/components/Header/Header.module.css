@@ -68,7 +68,7 @@ header {
     flex: 1;
   }
   
-  .navPagesUl > li {
+  .navPagesUl li {
     display: flex;
   }
   
@@ -88,4 +88,11 @@ header {
   
   li:hover {
     border-bottom: 2px solid black;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: black;
+    text-decoration: none;
   }
