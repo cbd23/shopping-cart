@@ -7,8 +7,8 @@ function ProductSlide({ img, title, price, link }) {
 
     return (
         <Link to={link}>
-            <div className={styles.slideOne}>
-                <div className={styles.productOne}>
+            <div className={styles.slideContainer}>
+                <div className={styles.productContainer}>
                     <img className={styles.sliderProdImage} src={img} width='70%' alt={title} />
                     <div className={styles.sliderProdTitle}>{title}</div>
                     <div className={styles.sliderProdPrice}>{price}</div>
