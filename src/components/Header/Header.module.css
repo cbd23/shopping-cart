@@ -1,98 +1,99 @@
-header {  
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .disclaimer {
-    background-color: #ed1c24;
-    color: white;
-    font-weight: 700;
-    font-size: 0.9rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 4px 0;
-    flex: 1;
-    cursor: pointer;
-  }
-  
-  .navPages {
-    background-color: white;
-    flex: 1;
-    display: flex;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  
-  .aboutText,
-  .liText {
-    align-self: center;
-  }
-  
-  .navIcon {
-    margin-right: 4px;
-    flex: 1;
-  }
-  
-  .liIcon {
-    display: flex;
-  }
-  
-  .logoBox {
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .navLogo {
-    margin-left: 30px;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  
-  .rightHeaderBox {
-    justify-content: flex-end;
-  }
-  
-  .rightHeaderBox > ul {
-    display: flex;
-    margin-right: 30px;
-  }
-  
-  .logoBox,
-  .rightHeaderBox {
-    display: flex;
-    flex: 1;
-  }
-  
-  .navPagesUl li {
-    display: flex;
-  }
-  
-  .navCategories > ul {
-    display: flex;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  li {
-    border-bottom: 2px solid white;
-    padding: 6px 12px;
-    cursor: pointer;
-  }
-  
-  li:hover {
-    border-bottom: 2px solid black;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+}
 
-  a,
-  a:visited,
-  a:active {
-    color: black;
-    text-decoration: none;
-  }
+.disclaimer {
+  background-color: #ed1c24;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4px 0;
+  flex: 1;
+  cursor: pointer;
+}
+
+.navPages {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.aboutText,
+.liText {
+  align-self: center;
+}
+
+.navIcon {
+  margin-right: 4px;
+  flex: 1;
+}
+
+.liIcon {
+  display: flex;
+}
+
+.logoBox {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navLogo {
+  margin-left: 30px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rightHeaderBox {
+  justify-content: flex-end;
+}
+
+.rightHeaderBox > ul {
+  display: flex;
+  margin-right: 30px;
+}
+
+.logoBox,
+.rightHeaderBox {
+  display: flex;
+  flex: 1;
+}
+
+.navPagesUl li {
+  display: flex;
+}
+
+.navCategories > ul {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border-bottom: 2px solid white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+li:hover {
+  border-bottom: 2px solid black;
+}
+
+a,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: none;
+}
