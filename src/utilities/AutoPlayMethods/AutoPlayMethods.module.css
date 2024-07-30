@@ -1,0 +1,33 @@
+.sliderContainer {
+    /* border: 1px solid deeppink; */
+
+    height: 100%;   
+}
+
+.mainSlider {
+    background-color: bisque;
+
+    height: 100%;
+}
+
+.mainSlider div {
+    height: 100%;
+
+    text-align: center;
+}
+
+.slideOne,
+.slideTwo,
+.slideThree,
+.slideFour,
+.slideFive,
+.slideSix {
+    /* border: 2px solid green; */
+    background-color: pink;
+}
+
+.slideOne,
+.slideThree,
+.slideFive {
+    background-color: deepskyblue;
+}
