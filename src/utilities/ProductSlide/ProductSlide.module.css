@@ -1,0 +1,25 @@
+.productOne {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderProdImage {
+    border: 1px solid deeppink;
+}
+
+.sliderProdTitle {
+    border: 1px solid blue;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+}
+
+.sliderProdPrice {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
