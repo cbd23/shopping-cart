@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import styles from "./Home.module.css";
-
 import { Link } from "react-router-dom";
+
+import AutoPlayMethods from "../../utilities/AutoPlayMethods/AutoPlayMethods";
 
 function Home() {
   return (
@@ -11,8 +12,9 @@ function Home() {
         <Link to='/shop'>
           <button className={styles.shopNowBtn}>Shop Now</button>
         </Link>
-        
-        
+        <div className={styles.carouselContainer}>
+          <AutoPlayMethods />
+        </div>
       </main>
   );
 }
