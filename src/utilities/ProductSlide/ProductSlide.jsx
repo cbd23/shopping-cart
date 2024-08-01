@@ -11,7 +11,7 @@ function ProductSlide({ img, title, price, link }) {
                 <div className={styles.productContainer}>
                     <img className={styles.sliderProdImage} src={img} width='70%' alt={title} />
                     <div className={styles.sliderProdTitle}>{title}</div>
-                    <div className={styles.sliderProdPrice}>{price}</div>
+                    <div className={styles.sliderProdPrice}>{'$' + price}</div>
                 </div>
             </div>
         </Link> 
@@ -21,7 +21,7 @@ function ProductSlide({ img, title, price, link }) {
 ProductSlide.propTypes = {
     img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
     link: PropTypes.string.isRequired
 }
 
