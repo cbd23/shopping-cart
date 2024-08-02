@@ -1,0 +1,143 @@
+{
+    "womenswear": [
+        {
+            "id": 1,
+            "title": "ASYMMETRIC SATIN DRESS",
+            "description": "Midi dress with a cowl neckline, asymmetric strap and an open back.",
+            "category": "womenswear",
+            "price": 49.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-dress.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-dress-back.jpg"
+        },
+        {
+            "id": 2,
+            "title": "LOS ANGELES T-SHIRT",
+            "description": "OVERSIZE - ROUND NECK - NORMAL LENGTH - SHORT SLEEVES. T-shirt made of 100% cotton. Round neck and drop-shoulder short sleeves. Contrast slogan detail.",
+            "category": "womenswear",
+            "price": 17.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-shirt.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-shirt-back.jpg"
+        },
+        {
+            "id": 3,
+            "title": "DENIM-EFFECT WIDE-LEG TROUSERS",
+            "description": "High-waist wide-leg trousers with elasticated waistband at the back. Front pockets and back patch pockets. Front zip and button fastening.",
+            "category": "womenswear",
+            "price": 49.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-pants.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-pants-back.jpg"
+        },
+        {
+            "id": 4,
+            "title": "SPLIT LEATHER SANDALS WITH BUCKLES",
+            "description": "Split leather flat slider sandals. Wide straps and buckles. Round toe. Sole height: 2 cm. / 0.7″",
+            "category": "womenswear",
+            "price": 55.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-shoes.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-shoes-back.jpg"
+        },
+        {
+            "id": 5,
+            "title": "CONTRAST SHOPPER BAG",
+            "description": "Contrast shopper bag. Fabric exterior. Top handles and shoulder straps. Removable inner organiser pocket. Height x Length x Width 31 x 50 x 13 cm. / 12.2 x 19.6 x 5.1″",
+            "category": "womenswear",
+            "price": 45.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-bag.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/womenswear/women-bag-back.jpg"
+        }
+    ],
+    "menswear": [
+        {
+            "id": 6,
+            "title": "T-SHIRT WITH SLOGAN",
+            "description": "Boxy fit T-shirt with a round neck and short sleeves. Contrast slogan prints on the front and back.",
+            "category": "menswear",
+            "price": 22.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-t-shirt.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-t-shirt-back.jpg"
+        },
+        {
+            "id": 7,
+            "title": "GEOMETRIC PRINT JACQUARD BERMUDA SHORTS",
+            "description": "Relaxed fit Bermuda shorts in textured fabric. Elasticated waistband with adjustable drawstring, side pockets and a back patch pocket.",
+            "category": "menswear",
+            "price": 39.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-pants.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-pants-back.jpg"
+        },
+        {
+            "id": 8,
+            "title": "LEATHER ESPADRILLES",
+            "description": "Leather espadrilles with a split leather finish. Soft design. Jute-covered sole.",
+            "category": "menswear",
+            "price": 49.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-shoes.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-shoes-back.jpg"
+        },
+        {
+            "id": 9,
+            "title": "HOODED TECHNICAL JACKET",
+            "description": "Jacket made of technical fabric. High neck with adjustable hood. Long sleeves with adjustable hook-and-loop straps on the cuffs. Zip pockets on the chest and hip. Zip-up front.",
+            "category": "menswear",
+            "price": 49.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-jacket.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-jacket-back.jpg"
+        },
+        {
+            "id": 10,
+            "title": "CAP WITH CONTRAST EMBROIDERY",
+            "description": "Cap with flat peak. Contrast embroidery on the front. Faded effect. Adjustable back.",
+            "category": "menswear",
+            "price": 17.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-cap.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-cap-back.jpg"
+        }
+    ],
+    "kidswear": [
+        {
+            "id": 11,
+            "title": "PRINTED T-SHIRT",
+            "description": "T-shirt with a round neck, short sleeves, trim detail on the neck and front print.",
+            "category": "kidswear",
+            "price": 9.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-shirt.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-shirt-back.jpg"
+        },
+        {
+            "id": 12,
+            "title": "PLAIN TROUSERS WITH POCKETS",
+            "description": "Trousers with an elasticated waistband and adjustable drawstrings. Rear patch pockets.",
+            "category": "kidswear",
+            "price": 12.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-trousers.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-trousers-back.jpg"
+        },
+        {
+            "id": 13,
+            "title": "CONTRAST LEATHER BLEND SNEAKERS",
+            "description": "Contrast sneakers in a leather blend. Fastening with two hook-and-loop straps. 100% cotton flexible insole and lining. Rubber sole.",
+            "category": "kidswear",
+            "price": 29.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-shoes.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-shoes-back.jpg"
+        },
+        {
+            "id": 14,
+            "title": "TWILL OVERSHIRT",
+            "description": "Collared overshirt with long sleeves. Front snap-button fastening and patch pockets on the chest.",
+            "category": "kidswear",
+            "price": 22.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-overshirt.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-overshirt-back.jpg"
+        },
+        {
+            "id": 15,
+            "title": "HEART SUNGLASSES",
+            "description": "Sunglasses with a heart-shaped resin frame. 100% UV PROTECTION. CATEGORY 3.",
+            "category": "kidswear",
+            "price": 12.95,
+            "imageOne": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-sunglasses.jpg",
+            "imageTwo": "https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/kidswear/kids-sunglasses-back.jpg"
+        }
+    ]
+}
