@@ -7,11 +7,12 @@ import Favorites from './components/Favorites/Favorites'
 import Cart from './components/Cart/Cart'
 
 // Product categories
-import WomenClothing from './components/WomenClothing/WomenClothing'
-import MenClothing from './components/MenClothing/MenClothing'
-import Jewelry from './components/Jewelry/Jewelry'
-import Electronics from './components/Electronics/Electronics'
+import Womenswear from './components/Womenswear/Womenswear'
+import Menswear from './components/Menswear/Menswear'
+import Kidswear from './components/Kidswear/Kidswear'
 
+// Product
+import Product from './components/Product/Product'
 
 const routes = [
     {
@@ -27,20 +28,20 @@ const routes = [
                 element: <Shop />
             },
             {
-                path: '/shop/women',
-                element: <WomenClothing />
+                path: '/shop/womenswear',
+                element: <Womenswear />
             },
             {
-                path: '/shop/men',
-                element: <MenClothing />
+                path: '/shop/menswear',
+                element: <Menswear />
             },
             {
-                path: '/shop/jewelry',
-                element: <Jewelry />
+                path: '/shop/kidswear',
+                element: <Kidswear />
             },
             {
-                path: '/shop/electronics',
-                element: <Electronics />
+                path: '/shop/:category/:productId',
+                element: <Product />
             },
             {
                 path: '/about',
