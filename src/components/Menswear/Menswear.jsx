@@ -1,11 +1,8 @@
 import styles from './Menswear.module.css'
 import ShopInventory from '../../utilities/shop-stock.json'
 import { Link } from 'react-router-dom'
-import Shop from '../Shop/Shop'
 
 function Menswear() {
-
-    console.log(ShopInventory)
 
     const menswearProducts = ShopInventory.menswear.map((item) => (
         <Link to={'/shop/menswear/' + item.id} key={item.id} className={styles.productContainer}>
@@ -18,6 +15,9 @@ function Menswear() {
             </div>
         </Link>  
     ))
+
+    const isMounted = true
+    if (!isMounted) return <h1 className={styles.loading}>Loading...</h1>
 
     return (
         <main className={styles.main}>
