@@ -1,25 +1,41 @@
 .productContainer {
-    background-color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sliderProdImage {
-    border: 1px solid deeppink;
+    border-radius: 8px;
+}
+
+.textContainer {
+    /* border: 1px solid; */
+
+    display: flex;
+    width: 70%;
+    padding: 0 4px;
+    font-size: 0.9rem;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .sliderProdTitle {
-    border: 1px solid blue;
-    font-weight: 700;
-
+    font-weight: 500;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .sliderProdPrice {
-    border: 1px solid red;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
