@@ -9,9 +9,13 @@ function ProductSlide({ img, title, price, link }) {
         <Link to={link}>
             <div className={styles.slideContainer}>
                 <div className={styles.productContainer}>
-                    <img className={styles.sliderProdImage} src={img} width='70%' alt={title} />
-                    <div className={styles.sliderProdTitle}>{title}</div>
-                    <div className={styles.sliderProdPrice}>{'$' + price}</div>
+                    <div className={styles.imageContainer}>
+                        <img className={styles.sliderProdImage} src={img} width='70%' alt={title} />
+                    </div>
+                    <div className={styles.textContainer}>
+                        <div className={styles.sliderProdTitle}>{title}</div>
+                        <div className={styles.sliderProdPrice}>{price + ' eur'}</div>
+                    </div>
                 </div>
             </div>
         </Link> 
