@@ -1,5 +1,4 @@
 .main {
-    border: 2px solid orange;
     flex: 1;
     margin: 5% 0;
     display: flex;
@@ -39,8 +38,6 @@ h1 {
 }
 
 .carouselContainer {
-    border: 1px solid black;
-
     height: 100%;
     width: 60%;
 }
