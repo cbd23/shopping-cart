@@ -1,33 +1,44 @@
+import { useState } from "react";
 import styles from './Product.module.css'
 import ShopInventory from '../../utilities/shop-stock.json'
-import PropTypes from 'prop-types'
-import { useOutletContext } from 'react-router-dom'
-
+import { useParams } from 'react-router-dom'
 
 function Product() {
 
-    const context = useOutletContext()
+    const [displayedImage, setDisplayedImage] = useState('first')
+
+    // access Product's parameters in order to get 'id' & 'category'
+    const param = useParams()
+    const selectedProductId = Number(param.productId)
+    const selectedCategory = param.category
+
+    // define the target using 'id' & 'category'
+    const target = ShopInventory[selectedCategory].find(item => item.id === selectedProductId)
+
+    // create a switcher for the main image that's being displayed
+    function switchImage(number) {
+        setDisplayedImage(number)
+    }
 
     return (
-        // <div>{context.currentProduct}</div>
         <main className={styles.main}>
             <div className={styles.emptyContainer}></div>
             <div className={styles.imagesContainer}>
                 <div className={styles.mainImageContainer}>
-                    <img className={styles.mainImage} src="https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-t-shirt.jpg" alt="" width='80%' />
+                    <img className={styles.mainImage} src={ displayedImage === 'first' ? target.imageOne : target.imageTwo} alt={target.title} width='80%' />
                 </div>
             </div>
             <div className={styles.infoContainer}>
                 <div className={styles.availableImagesContainer}>
-                    <img className={styles.imageOne} src="https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-t-shirt.jpg" alt="" width='20%' />
-                    <img className={styles.imageTwo} src="https://raw.githubusercontent.com/cbd23/shopping-cart/main/src/images/shop-stock/menswear/men-t-shirt-back.jpg" alt="" width='20%'/>
+                    <img onClick={() => switchImage('first')} className={styles.imageOne} src={target.imageOne} alt={'picture of ' + target.title} width='20%' />
+                    <img onClick={() => switchImage('second')} className={styles.imageTwo} src={target.imageTwo} alt={'picture of ' + target.title + ' seen from behind'} width='20%'/>
                 </div>
                 <div className={styles.textContainer}>
                     <div className={styles.topInfo}>
-                        <div className={styles.productTitle}>TITLE OF THE PRODUCT</div>
-                        <div className={styles.productPrice}>43.95 eur</div>
+                        <div className={styles.productTitle}>{target.title}</div>
+                        <div className={styles.productPrice}>{target.price} eur</div>
                     </div>
-                    <div className={styles.productDescription}>Lorem ipsum goes right here ipsum goes right here ipsum goes right here ipsum goes right here ipsum goes right here.</div>
+                    <div className={styles.productDescription}>{target.description}</div>
                     <div className={styles.productDisclaimer}>CHECK IN-STORE AVAILABILITY<br /><br />SHIPPING, EXCHANGES AND RETURNS</div>
                     <div className={styles.buttonsContainer}>
                         <div>ADD TO CART</div>
@@ -36,10 +47,6 @@ function Product() {
             </div>
         </main>
     )
-}
-
-Product.propTypes = {
-    currentProduct: PropTypes.number
 }
 
 export default Product
