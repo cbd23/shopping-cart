@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from './Product.module.css'
 import ShopInventory from '../../utilities/shop-stock.json'
 import { useParams } from 'react-router-dom'
 
+import Icon from '@mdi/react';
+import { mdiHeart, mdiHeartOutline } from '@mdi/js';
+
 function Product() {
 
     const [displayedImage, setDisplayedImage] = useState('first')
+    const [favorite, setFavorite] = useState(false)
 
     // access Product's parameters in order to get 'id' & 'category'
     const param = useParams()
@@ -19,6 +23,15 @@ function Product() {
     function switchImage(number) {
         setDisplayedImage(number)
     }
+
+    function switchFavorite() {
+        let prevValue = favorite
+        setFavorite(!prevValue)
+    }
+
+    useEffect(() => {
+        console.log(favorite)
+    }, [favorite])
 
     return (
         <main className={styles.main}>
@@ -35,7 +48,12 @@ function Product() {
                 </div>
                 <div className={styles.textContainer}>
                     <div className={styles.topInfo}>
-                        <div className={styles.productTitle}>{target.title}</div>
+                        <div className={styles.firstRow}>
+                            <div className={styles.productTitle}>{target.title}</div>
+                            <div onClick={() => switchFavorite()} className={styles.favoritesBtn}>
+                                <Icon path={favorite === false ? mdiHeartOutline : mdiHeart} size={1} />
+                            </div>
+                        </div>
                         <div className={styles.productPrice}>{target.price} eur</div>
                     </div>
                     <div className={styles.productDescription}>{target.description}</div>
