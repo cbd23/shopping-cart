@@ -11,7 +11,7 @@ function Product() {
     const [displayedImage, setDisplayedImage] = useState('first')
 
     // destructure passed context in order to use it
-    const { favoriteProducts, updateFavorites } = useOutletContext()
+    const { favoriteProducts, updateFavorites, cartProducts, updateCart } = useOutletContext()
 
     // access Product's parameters to get its 'id' & 'category'
     const param = useParams()
@@ -51,8 +51,8 @@ function Product() {
                     </div>
                     <div className={styles.productDescription}>{target.description}</div>
                     <div className={styles.productDisclaimer}>CHECK IN-STORE AVAILABILITY<br /><br />SHIPPING, EXCHANGES AND RETURNS</div>
-                    <div className={styles.buttonsContainer}>
-                        <div>ADD TO CART</div>
+                    <div onClick={() => updateCart(selectedProductId)} className={styles.buttonsContainer}>
+                        <div>{cartProducts.includes(selectedProductId) ? 'REMOVE FROM CART' : 'ADD TO CART'}</div>
                     </div>
                 </div>
             </div>
