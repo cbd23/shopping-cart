@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import styles from "./Home.module.css";
-import { Link, useOutletContext } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import AutoPlayMethods from "../../utilities/AutoPlayMethods/AutoPlayMethods";
 
