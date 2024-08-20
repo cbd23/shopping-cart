@@ -5,13 +5,17 @@ function About() {
     return (
         <main className={styles.main}>
           <h1 className={styles.about}>Hello there!</h1>
-          <p className={styles.para}>Chances are that you already realized that this website is not a real store.
+          <p className={styles.para}>Chances are that you already realized that this website is <span className={styles.disclaimer}>not a real store</span>.
           <br /><br />
-          But if somehow you didn&apos;t see the <span className={styles.disclaimer}>red disclaimer band</span> that&apos;s displayed on each and every page, and now you&apos;re shocked to find out the truth, we&apos;ll take that as a compliment.
+          If you did not, I&apos;ll take that as a compliment.
           <br /><br />
-          So please go ahead and feel free to explore our fresh products, add them to favorites or even place an order that you won&apos;t have to pay for since it will never be delivered to you.
+          However, this website is my third project built using <strong>React</strong>, and the main purpose behind it was to put my latest acquired skills at work.
           <br /><br />
-          Because... we&apos;re not a real store, remember?
+          But you can read more technical details about it <a href="https://github.com/cbd23/shopping-cart" target='_blank' className={styles.anchor}>right here</a>. 
+          <br /><br />
+          Now feel free and explore my fresh products, add them to favorites or even place an order that you won&apos;t have to pay for since it will never be delivered to you.
+          <br /><br />
+          Because... this is not a real store, remember?
           </p>
         </main>
     )
