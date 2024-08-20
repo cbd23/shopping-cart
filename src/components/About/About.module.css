@@ -23,3 +23,8 @@
     font-size: 0.9rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.anchor {
+    font-weight: 700;
+    text-decoration: underline;
+}
