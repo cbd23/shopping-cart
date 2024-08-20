@@ -16,13 +16,16 @@ function Cart() {
   return (
     <main className={styles.main}>
       <div className={styles.cartFavsSwitcher}>
-        <Link to='/cart' className={styles.linkToShoppingCart}>Shopping cart</Link>
-        <Link to='/favorites' className={styles.linkToFavs}>Favorites</Link>
+        <Link to='/cart' className={styles.linkToShoppingCart}>SHOPPING CART</Link>
+        <Link to='/favorites' className={styles.linkToFavs}>FAVORITES</Link>
       </div>
-
       <div className={styles.cartItems}>
         {cartItems.length === 0 ? (
-          <p>Your cart is empty.</p>
+          <div className={styles.emptyCart}>
+            <p>YOUR SHOPPING CART IS EMPTY</p>
+            <br />
+            <Link className={styles.visitShop} to='/shop'>SHOP NOW</Link>
+          </div>
         ) : (
           cartItems.map((product) => (
             <div key={product.id} className={styles.cartItem}>
