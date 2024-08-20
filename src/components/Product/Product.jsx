@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from './Product.module.css'
 import ShopInventory from '../../utilities/shop-stock.json'
 import { useParams, useOutletContext } from 'react-router-dom'
