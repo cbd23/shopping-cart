@@ -39,14 +39,16 @@ function Cart() {
           <>
             {cartItems.map((product) => (
               <div key={product.id} className={styles.cartItem}>
-                <img
-                  src={product.imageOne}
-                  alt={product.title}
-                  className={styles.productImage}
-                />
+                <Link to={'/shop/' + product.category + '/' + product.id}>
+                  <img
+                    src={product.imageOne}
+                    alt={product.title}
+                    className={styles.productImage}
+                  />
+                </Link>
                 <div className={styles.productInfo}>
                   <div className={styles.productInfoLeft}>
-                    <p>{product.title}</p>
+                    <Link to={'/shop/' + product.category + '/' + product.id}>{product.title}</Link>
                     <p>{product.price} eur</p>
                   </div>
                   <div className={styles.productInfoRight}>
