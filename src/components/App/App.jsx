@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Outlet context={{favoriteProducts, updateFavorites, cartProducts, updateCart}} />
+      <Outlet context={{favoriteProducts, updateFavorites, cartProducts, updateCart, setCartProducts}} />
     </>
   )
 }
