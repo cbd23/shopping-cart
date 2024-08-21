@@ -6,13 +6,8 @@ import styles from "./App.module.css";
 import Header from "../Header/Header";
 
 function App() {
-
   const [favoriteProducts, setFavoriteProducts] = useState([])
   const [cartProducts, setCartProducts] = useState([])
-
-  // useEffect(() => {
-  //   console.log(favoriteProducts)
-  // }, [favoriteProducts])
   
   const isMounted = true
   if (!isMounted) return <h1 className={styles.loading}>Loading...</h1>
@@ -44,7 +39,7 @@ function App() {
       <Header></Header>
       <Outlet context={{favoriteProducts, updateFavorites, cartProducts, updateCart}} />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
