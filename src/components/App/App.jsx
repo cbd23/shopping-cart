@@ -8,9 +8,6 @@ import Header from "../Header/Header";
 function App() {
   const [favoriteProducts, setFavoriteProducts] = useState([])
   const [cartProducts, setCartProducts] = useState([])
-  
-  const isMounted = true
-  if (!isMounted) return <h1 className={styles.loading}>Loading...</h1>
 
   // add/remove products to/from Favorites, depending if they're added or not
   function updateFavorites(id) {
