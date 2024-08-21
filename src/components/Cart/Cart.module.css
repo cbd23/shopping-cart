@@ -97,3 +97,50 @@
     background-color: white;
     cursor: pointer;
 }
+
+.grandTotal {
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalDisclaimer {
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    align-self: center;
+    margin-left: 1rem;
+    flex: 8;
+}
+
+.totalSum {
+    box-sizing: border-box;
+    flex: 1;
+    padding: 14px;
+    font-size: 0.7rem;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+}
+
+.totalNumber {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.placeOrder {
+    background-color: black;
+    color: white;
+    flex: 1;
+    height: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
