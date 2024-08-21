@@ -1,9 +1,30 @@
+import { useState, useEffect } from 'react'
 import styles from './Kidswear.module.css'
 import ShopInventory from '../../utilities/shop-stock.json'
 import { Link } from 'react-router-dom'
 
 function Kidswear() {
-    
+    const [imagesLoaded, setImagesLoaded] = useState(false)
+
+    useEffect(() => {
+        const imagePromises = ShopInventory.kidswear.map(item => {
+            return new Promise((res, rej) => {
+                const img = new Image()
+                img.src = item.imageOne
+                img.onload = res
+                img.onerror = rej
+            })
+        })
+
+        Promise.all(imagePromises)
+        .then(() => setImagesLoaded(true))
+        .catch(err => console.error('Error loading images', err))
+    }, [])
+
+    if (!imagesLoaded) {
+        return <h1>Loading kidswear products...</h1>
+    }
+
     const kidswearProducts = ShopInventory.kidswear.map((item) => (
         <Link to={'/shop/kidswear/' + item.id} key={item.id} className={styles.productContainer}>
             <div className={styles.imageContainer}>
@@ -15,9 +36,6 @@ function Kidswear() {
             </div>
         </Link>  
     ))
-
-    const isMounted = true
-    if (!isMounted) return <h1 className={styles.loading}>Loading...</h1>
 
     return (
         <main className={styles.main}>
