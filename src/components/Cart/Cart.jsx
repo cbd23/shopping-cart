@@ -5,7 +5,7 @@ import Icon from "@mdi/react"
 import { mdiClose } from "@mdi/js"
 
 function Cart() {
-  const { cartProducts, updateCart } = useOutletContext()
+  const { cartProducts, updateCart, setCartProducts } = useOutletContext()
 
   // flatten the ShopInventory object into a single array that contains all products &
   // filter the array to include only the products whose IDs are in 'cartProducts'
@@ -15,6 +15,12 @@ function Cart() {
 
   // calculate the total value of the shopping cart
   const totalCartValue = cartItems.reduce((sum, product) => sum + product.price, 0).toFixed(2)
+
+  // message the user & empty the cart after they place an order
+  function placeOrder() {
+    setCartProducts([])
+    alert('You have successfully placed an order that will never be shipped. Congrats!')
+  }
 
   return (
     <main className={styles.main}>
@@ -74,7 +80,7 @@ function Cart() {
                 <br />*INCLUDING VAT
               </div>
               <div
-                onClick={() => alert("Thanks")}
+                onClick={() => placeOrder()}
                 className={styles.placeOrder}
               >
                 PLACE ORDER
