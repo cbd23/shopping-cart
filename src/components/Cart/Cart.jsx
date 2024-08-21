@@ -13,6 +13,9 @@ function Cart() {
     .flat()
     .filter((product) => cartProducts.includes(product.id))
 
+  // calculate the total value of the shopping cart
+  const totalCartValue = cartItems.reduce((sum, product) => sum + product.price, 0).toFixed(2)
+
   return (
     <main className={styles.main}>
       <div className={styles.cartFavsSwitcher}>
@@ -65,8 +68,8 @@ function Cart() {
                 Cookie Policy.
               </div>
               <div className={styles.totalSum}>
-                <span className={styles.totalNumber}>TOTAL 100 LEI</span>{" "}
-                *INCLUDING VAT
+                <span className={styles.totalNumber}>TOTAL &nbsp; {totalCartValue} eur</span>{" "}
+                <br />*INCLUDING VAT
               </div>
               <div
                 onClick={() => alert("Thanks")}
