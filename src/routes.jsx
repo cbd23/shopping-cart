@@ -14,10 +14,14 @@ import Kidswear from './components/Kidswear/Kidswear'
 // Product
 import Product from './components/Product/Product'
 
+// ErrorPage
+import ErrorPage from './components/ErrorPage/ErrorPage'
+
 const routes = [
     {
         path: '/',
         element: <App />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 index: true,
