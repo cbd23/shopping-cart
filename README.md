@@ -9,7 +9,7 @@
 
 ### Introduction
 
-Feel free to explore the products in available this **Online Store App** that I build using **React**.
+Feel free to explore the products available in this **Online Store App** that I build using **React**.
 
 <img width="1470" alt="badilas-online-shop" src="https://github.com/user-attachments/assets/9af606dc-3092-415f-a1db-631109c64e48">
 Go back and forth by using the dots under the carousel slider and hover it to pause the slides if you want to look at a product for a few seconds.
