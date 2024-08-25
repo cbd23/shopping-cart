@@ -15,14 +15,15 @@ Feel free to explore the products available in this **Online Store App** that I 
 Go back and forth by using the dots under the carousel slider and hover it to pause the slides if you want to look at a product for a few seconds.
 
 <img width="1022" alt="product" src="https://github.com/user-attachments/assets/7f30c570-5f9b-4518-a57e-ad3f1a9f8d92">
-Mark products as **favorite** or add them to your cart. You can remove them anytime, either from the product page or directly from cart.
+Mark products as favorite or add them to your cart. You can remove them anytime, either from the product page or directly from cart.
 
 <img width="1470" alt="cart" src="https://github.com/user-attachments/assets/fded425a-3794-4632-9ba0-f53b6bf265c7">
 See the products that you added and their price. Click on a product to go on their page one more time, remove it from the cart or even place an order that you don't have to pay for, since it will never be shipped to you.
-The **TOTAL** updates as you add/remove items to/from the shopping cart.
+
+The TOTAL updates as you add/remove items to/from the shopping cart.
 
 <img width="1470" alt="error" src="https://github.com/user-attachments/assets/a5bc8158-9641-4f27-a047-0fcf05195415">
-A message will be displayed as soon as you're trying to access a URL that doesn't exist + a button that will help you go back to **Homepage.**
+A message will be displayed as soon as you're trying to access a URL that doesn't exist + a button that will help you go back to Homepage.
 
 ---
 
